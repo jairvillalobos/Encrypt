@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>settings.svg</file>
+    <file>unlock.svg</file>
+    <file>shield.svg</file>
+    <file>shield-off.svg</file>
+    <file>refresh-cw.svg</file>
+    <file>lock.svg</file>
+    <file>key.svg</file>
+  </qresource>
+</RCC>
