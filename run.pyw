@@ -14,7 +14,7 @@ class Ventana_principal(QWidget):
         self.ui.btn_genera_clave.clicked.connect(self.generate_clave)
         self.ui.btn_encriptar.clicked.connect(self.encrypt)
         self.ui.btn_desencriptar.clicked.connect(self.de_encrypt)
-        self.nom_archivo = "NOTAS_CLASE_programacion I.xlsx"
+        self.nom_archivo = "web-site.jpg"
 
     def generate_clave(self):
         self.clave = Fernet.generate_key()
