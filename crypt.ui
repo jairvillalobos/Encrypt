@@ -10,6 +10,24 @@
     <height>540</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>430</width>
+    <height>540</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>430</width>
+    <height>540</height>
+   </size>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>430</width>
+    <height>540</height>
+   </size>
+  </property>
   <property name="cursor">
    <cursorShape>PointingHandCursor</cursorShape>
   </property>
@@ -19,8 +37,8 @@
   <widget class="QPushButton" name="btn_encriptar">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>200</y>
+     <x>50</x>
+     <y>320</y>
      <width>341</width>
      <height>51</height>
     </rect>
@@ -42,39 +60,11 @@ QPushButton:hover{
     <string>Encriptar Archivo</string>
    </property>
   </widget>
-  <widget class="QLabel" name="mensaje">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>370</y>
-     <width>321</width>
-     <height>101</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>321</width>
-     <height>101</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>321</width>
-     <height>101</height>
-    </size>
-   </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
   <widget class="QPushButton" name="btn_genera_clave">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>120</y>
+     <x>50</x>
+     <y>80</y>
      <width>341</width>
      <height>51</height>
     </rect>
@@ -103,8 +93,8 @@ QPushButton:hover{
   <widget class="QPushButton" name="btn_desencriptar">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>280</y>
+     <x>50</x>
+     <y>390</y>
      <width>341</width>
      <height>51</height>
     </rect>
@@ -141,12 +131,85 @@ QPushButton:hover{
    </property>
    <property name="styleSheet">
     <string notr="true">font: 19px bold &quot;Nimbus Mono L&quot;;
+color: #900C3F;
 </string>
    </property>
    <property name="text">
     <string>Crypty Arch</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="btn_buscar">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>240</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Nimbus Mono L</family>
+     <pointsize>-1</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	border-radius:7px; 
+	color:white;
+	background-color: #900C3F;
+	font: 20px &quot;Nimbus Mono L&quot;;
+}</string>
+   </property>
+   <property name="text">
+    <string>Buscar </string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>190</y>
+     <width>341</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+	background-color: #FFFFFF;
+	font: 17px &quot;Nimbus Mono L&quot;;
+	background-repeat: space;
+	border-radius:7px;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>160</y>
+     <width>251</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14px &quot;Nimbus Mono L&quot; bold;
+color:#900C3F;</string>
+   </property>
+   <property name="text">
+    <string>Busque el Nombre del Archivo:</string>
+   </property>
+  </widget>
+  <zorder>lineEdit</zorder>
+  <zorder>btn_genera_clave</zorder>
+  <zorder>btn_encriptar</zorder>
+  <zorder>btn_desencriptar</zorder>
+  <zorder>btn_buscar</zorder>
+  <zorder>titulo</zorder>
+  <zorder>label</zorder>
  </widget>
  <tabstops>
   <tabstop>btn_genera_clave</tabstop>

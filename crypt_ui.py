@@ -15,9 +15,12 @@ class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(430, 540)
+        Form.setMinimumSize(QtCore.QSize(430, 540))
+        Form.setMaximumSize(QtCore.QSize(430, 540))
+        Form.setSizeIncrement(QtCore.QSize(430, 540))
         Form.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.btn_encriptar = QtWidgets.QPushButton(Form)
-        self.btn_encriptar.setGeometry(QtCore.QRect(40, 200, 341, 51))
+        self.btn_encriptar.setGeometry(QtCore.QRect(50, 320, 341, 51))
         self.btn_encriptar.setStyleSheet("QPushButton{\n"
 "    background-color: #FFFFFF;\n"
 "    background-image: url(:/icons/lock.svg);\n"
@@ -30,15 +33,8 @@ class Ui_Form(object):
 "    background-color: rgb(249, 185, 196);\n"
 "}")
         self.btn_encriptar.setObjectName("btn_encriptar")
-        self.mensaje = QtWidgets.QLabel(Form)
-        self.mensaje.setGeometry(QtCore.QRect(50, 370, 321, 101))
-        self.mensaje.setMinimumSize(QtCore.QSize(321, 101))
-        self.mensaje.setMaximumSize(QtCore.QSize(321, 101))
-        self.mensaje.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.mensaje.setText("")
-        self.mensaje.setObjectName("mensaje")
         self.btn_genera_clave = QtWidgets.QPushButton(Form)
-        self.btn_genera_clave.setGeometry(QtCore.QRect(40, 120, 341, 51))
+        self.btn_genera_clave.setGeometry(QtCore.QRect(50, 80, 341, 51))
         self.btn_genera_clave.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.btn_genera_clave.setStyleSheet("QPushButton{\n"
 "    background-color: #FFFFFF;\n"
@@ -54,7 +50,7 @@ class Ui_Form(object):
 "    ")
         self.btn_genera_clave.setObjectName("btn_genera_clave")
         self.btn_desencriptar = QtWidgets.QPushButton(Form)
-        self.btn_desencriptar.setGeometry(QtCore.QRect(40, 280, 341, 51))
+        self.btn_desencriptar.setGeometry(QtCore.QRect(50, 390, 341, 51))
         self.btn_desencriptar.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.btn_desencriptar.setStyleSheet("QPushButton{\n"
 "    background-color: #FFFFFF;\n"
@@ -72,8 +68,46 @@ class Ui_Form(object):
         self.titulo = QtWidgets.QLabel(Form)
         self.titulo.setGeometry(QtCore.QRect(160, 30, 111, 41))
         self.titulo.setStyleSheet("font: 19px bold \"Nimbus Mono L\";\n"
+"color: #900C3F;\n"
 "")
         self.titulo.setObjectName("titulo")
+        self.btn_buscar = QtWidgets.QPushButton(Form)
+        self.btn_buscar.setGeometry(QtCore.QRect(50, 240, 101, 41))
+        font = QtGui.QFont()
+        font.setFamily("Nimbus Mono L")
+        font.setPointSize(-1)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.btn_buscar.setFont(font)
+        self.btn_buscar.setStyleSheet("QPushButton{\n"
+"    border-radius:7px; \n"
+"    color:white;\n"
+"    background-color: #900C3F;\n"
+"    font: 20px \"Nimbus Mono L\";\n"
+"}")
+        self.btn_buscar.setObjectName("btn_buscar")
+        self.lineEdit = QtWidgets.QLineEdit(Form)
+        self.lineEdit.setGeometry(QtCore.QRect(50, 190, 341, 41))
+        self.lineEdit.setStyleSheet("QLineEdit{\n"
+"    background-color: #FFFFFF;\n"
+"    font: 17px \"Nimbus Mono L\";\n"
+"    background-repeat: space;\n"
+"    border-radius:7px;\n"
+"}")
+        self.lineEdit.setObjectName("lineEdit")
+        self.label = QtWidgets.QLabel(Form)
+        self.label.setGeometry(QtCore.QRect(50, 160, 251, 20))
+        self.label.setStyleSheet("font: 14px \"Nimbus Mono L\" bold;\n"
+"color:#900C3F;")
+        self.label.setObjectName("label")
+        self.lineEdit.raise_()
+        self.btn_genera_clave.raise_()
+        self.btn_encriptar.raise_()
+        self.btn_desencriptar.raise_()
+        self.btn_buscar.raise_()
+        self.titulo.raise_()
+        self.label.raise_()
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -87,6 +121,8 @@ class Ui_Form(object):
         self.btn_genera_clave.setText(_translate("Form", "Generar Clave"))
         self.btn_desencriptar.setText(_translate("Form", "Desencriptar Archivo"))
         self.titulo.setText(_translate("Form", "Crypty Arch"))
+        self.btn_buscar.setText(_translate("Form", "Buscar "))
+        self.label.setText(_translate("Form", "Busque el Nombre del Archivo:"))
 import resource_rc
 
 

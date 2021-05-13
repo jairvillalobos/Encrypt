@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="icons">
+    <file>search.svg</file>
     <file>settings.svg</file>
     <file>unlock.svg</file>
     <file>shield.svg</file>
