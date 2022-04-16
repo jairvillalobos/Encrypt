@@ -6,54 +6,81 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>430</width>
-    <height>540</height>
+    <width>259</width>
+    <height>451</height>
    </rect>
   </property>
-  <property name="minimumSize">
-   <size>
-    <width>430</width>
-    <height>540</height>
-   </size>
-  </property>
-  <property name="maximumSize">
-   <size>
-    <width>430</width>
-    <height>540</height>
-   </size>
-  </property>
-  <property name="sizeIncrement">
-   <size>
-    <width>430</width>
-    <height>540</height>
-   </size>
-  </property>
-  <property name="cursor">
-   <cursorShape>PointingHandCursor</cursorShape>
+  <property name="font">
+   <font>
+    <family>Yu Gothic UI Light</family>
+    <pointsize>7</pointsize>
+   </font>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Cripty App</string>
   </property>
-  <widget class="QPushButton" name="btn_encriptar">
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(153, 15, 82);</string>
+  </property>
+  <widget class="QPushButton" name="btn_desencriptar">
    <property name="geometry">
     <rect>
-     <x>50</x>
+     <x>30</x>
      <y>320</y>
-     <width>341</width>
+     <width>211</width>
      <height>51</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">QPushButton{
+	font-family: 'Acme', sans-serif;
+	font-size:9pt;
 	background-color: #FFFFFF;
-	background-image: url(:/icons/lock.svg);
-	font: 19px &quot;Nimbus Mono L&quot;;
 	background-repeat: space;
 	border-radius:7px;
+	
+	background-image: url(:/icons/key.svg);
+	}
+QPushButton:hover{
+	background-color:rgb(0, 0, 0);
+	color:white
+}</string>
+   </property>
+   <property name="text">
+    <string>Desencriptar Archivo</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_encriptar">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>240</y>
+     <width>211</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	font-family: 'Acme', sans-serif;
+	font-size:9pt;
+	background-color: #FFFFFF;
+	background-repeat: space;
+	border-radius:7px;
+	
+	background-image: url(:/icons/lock.svg);
 	}
 
 QPushButton:hover{
-	background-color: rgb(249, 185, 196);
+	background-color:rgb(0, 0, 0);
+	color:white;
+	
+	
 }</string>
    </property>
    <property name="text">
@@ -63,9 +90,9 @@ QPushButton:hover{
   <widget class="QPushButton" name="btn_genera_clave">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>80</y>
-     <width>341</width>
+     <x>30</x>
+     <y>90</y>
+     <width>211</width>
      <height>51</height>
     </rect>
    </property>
@@ -74,15 +101,19 @@ QPushButton:hover{
    </property>
    <property name="styleSheet">
     <string notr="true">QPushButton{
+	font-family: 'Acme', sans-serif;
+	font-size:9pt;
 	background-color: #FFFFFF;
-	background-image: url(:/icons/refresh-cw.svg);
-	font: 19px &quot;Nimbus Mono L&quot;;
 	background-repeat: space;
 	border-radius:7px;
+background-image: url(:/icons/refresh-cw.svg);
+	
 	}
 
 QPushButton:hover{
-	background-color: rgb(249, 185, 196);
+	background-color:rgb(0, 0, 0);
+	color:white;
+	
 }
 	</string>
    </property>
@@ -90,12 +121,29 @@ QPushButton:hover{
     <string>Generar Clave</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="btn_desencriptar">
+  <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>390</y>
-     <width>341</width>
+     <x>90</x>
+     <y>20</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Crypty App</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_buscar_archivo">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>160</y>
+     <width>211</width>
      <height>51</height>
     </rect>
    </property>
@@ -104,118 +152,24 @@ QPushButton:hover{
    </property>
    <property name="styleSheet">
     <string notr="true">QPushButton{
+	font-family: 'Acme', sans-serif;
+	font-size:9pt;
 	background-color: #FFFFFF;
-	background-image: url(:/icons/unlock.svg);
-	font: 19px &quot;Nimbus Mono L&quot;;
 	background-repeat: space;
 	border-radius:7px;
 	}
 
 QPushButton:hover{
-	background-color: rgb(249, 185, 196);
+	background-color:rgb(0, 0, 0);
+	color:white
 }
 	</string>
    </property>
    <property name="text">
-    <string>Desencriptar Archivo</string>
+    <string>Buscar ...</string>
    </property>
   </widget>
-  <widget class="QLabel" name="titulo">
-   <property name="geometry">
-    <rect>
-     <x>160</x>
-     <y>30</y>
-     <width>111</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 19px bold &quot;Nimbus Mono L&quot;;
-color: #900C3F;
-</string>
-   </property>
-   <property name="text">
-    <string>Crypty Arch</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="btn_buscar">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>240</y>
-     <width>101</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Nimbus Mono L</family>
-     <pointsize>-1</pointsize>
-     <weight>50</weight>
-     <italic>false</italic>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton{
-	border-radius:7px; 
-	color:white;
-	background-color: #900C3F;
-	font: 20px &quot;Nimbus Mono L&quot;;
-}</string>
-   </property>
-   <property name="text">
-    <string>Buscar </string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>190</y>
-     <width>341</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QLineEdit{
-	background-color: #FFFFFF;
-	font: 17px &quot;Nimbus Mono L&quot;;
-	background-repeat: space;
-	border-radius:7px;
-}</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>160</y>
-     <width>251</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 14px &quot;Nimbus Mono L&quot; bold;
-color:#900C3F;</string>
-   </property>
-   <property name="text">
-    <string>Busque el Nombre del Archivo:</string>
-   </property>
-  </widget>
-  <zorder>lineEdit</zorder>
-  <zorder>btn_genera_clave</zorder>
-  <zorder>btn_encriptar</zorder>
-  <zorder>btn_desencriptar</zorder>
-  <zorder>btn_buscar</zorder>
-  <zorder>titulo</zorder>
-  <zorder>label</zorder>
  </widget>
- <tabstops>
-  <tabstop>btn_genera_clave</tabstop>
-  <tabstop>btn_encriptar</tabstop>
-  <tabstop>btn_desencriptar</tabstop>
- </tabstops>
  <resources>
   <include location="resource.qrc"/>
  </resources>
