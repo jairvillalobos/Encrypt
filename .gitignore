@@ -80,10 +80,10 @@ doc/_build/
 target/
 
 # clave generada file
-/clave-generada
+clave-generada/
 
 #clave generada
-*clave.key
+clave.key
 
 
 
