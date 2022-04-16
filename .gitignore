@@ -79,6 +79,14 @@ doc/_build/
 # PyBuilder
 target/
 
+# clave generada file
+/clave-generada
+
+#clave generada
+*clave.key
+
+
+
 # Jupyter Notebook
 .ipynb_checkpoints
 
