@@ -7,7 +7,6 @@ from PyQt5.QtWidgets import QMessageBox
 
 
 class Ventana_principal(QWidget):
-
     def __init__(self, parent=None):
         QtWidgets.QWidget.__init__(self, parent)
         self.ui = Ui_Form()
@@ -29,20 +28,20 @@ class Ventana_principal(QWidget):
         if fileName_choose == "":
             print("\nCancelar selección")
 
-        print("\ nEl archivo que seleccionó es:")
-        print(fileName_choose)
-        print("Tipo de filtro de archivo:", filetype)
+        #print("\ nEl archivo que seleccionó es:")
+        #print(self.nom_archivo)
+        #print("Tipo de filtro de archivo:", filetype)
 
     def generate_clave(self):
         self.clave = Fernet.generate_key()
-        print(self.clave)
-        with open('clave-generada/clave.key', 'wb') as archivo_clave:
+        #print(self.clave)
+        with open('clavegenerada/clave.key', 'wb') as archivo_clave:
             archivo_clave.write(self.clave)
-            print("clave generada exitosamente")
+            #print("clave generada exitosamente")
 
     def charge_clave(self):
         #print("clave cargada exitosamente")
-        return open('clave-generada/clave.key', 'r').read()
+        return open('clavegenerada/clave.key', 'r').read()
 
     def encrypt(self):
         try:
@@ -65,7 +64,6 @@ class Ventana_principal(QWidget):
                 file.write(self.data_decrypted)
         except Exception as e:
             print(e)
-
 
 if __name__ == "__main__":
     aplicacion_condesadora = QApplication(sys.argv)
