@@ -10,6 +10,12 @@
     <height>451</height>
    </rect>
   </property>
+  <property name="maximumSize">
+   <size>
+    <width>259</width>
+    <height>451</height>
+   </size>
+  </property>
   <property name="font">
    <font>
     <family>Yu Gothic UI Light</family>
@@ -135,7 +141,7 @@ QPushButton:hover{
 font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
    </property>
    <property name="text">
-    <string>Crypty App</string>
+    <string>Cripty App</string>
    </property>
   </widget>
   <widget class="QPushButton" name="btn_buscar_archivo">

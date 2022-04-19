@@ -15,6 +15,7 @@ class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(259, 451)
+        Form.setMaximumSize(QtCore.QSize(259, 451))
         font = QtGui.QFont()
         font.setFamily("Yu Gothic UI Light")
         font.setPointSize(7)
@@ -109,7 +110,7 @@ class Ui_Form(object):
         self.btn_desencriptar.setText(_translate("Form", "Desencriptar Archivo"))
         self.btn_encriptar.setText(_translate("Form", "Encriptar Archivo"))
         self.btn_genera_clave.setText(_translate("Form", "Generar Clave"))
-        self.label.setText(_translate("Form", "Crypty App"))
+        self.label.setText(_translate("Form", "Cripty App"))
         self.btn_buscar_archivo.setText(_translate("Form", "Buscar ..."))
 import resource_rc
 

@@ -51,6 +51,10 @@ class Ventana_principal(QWidget):
             self.data_encrypted = f.encrypt(self.info_archivo)
             with open(self.nom_archivo, 'wb') as file:
                 file.write(self.data_encrypted)
+                def sms_encipted(self):
+                    msgBox = QMessageBox(QMessageBox.NoIcon, 'Archivo','¡Encriptado Correctamente!')
+                    msgBox.exec()
+            sms_encipted(self)
         except Exception as e:
             print(e)
 
@@ -62,6 +66,10 @@ class Ventana_principal(QWidget):
             self.data_decrypted = f.decrypt(self.data_encrypted)
             with open(self.nom_archivo, 'wb') as file:
                 file.write(self.data_decrypted)
+                def sms_de_encripted(self):
+                    msgBox = QMessageBox(QMessageBox.NoIcon, 'Archivo','¡Desencriptado!')
+                    msgBox.exec()
+            sms_de_encripted(self)
         except Exception as e:
             print(e)
 
