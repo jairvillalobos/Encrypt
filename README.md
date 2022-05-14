@@ -9,7 +9,7 @@ What:
         pip install cryptography
         ```
 - PyQt5
-         ```
+        ```
         pip install cryptography
         ```
 
