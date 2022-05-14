@@ -1,4 +1,5 @@
 # Encrypt
+
  _Computer program written in Python that allows file encryption._
  
 This program was created using libraries
@@ -23,8 +24,7 @@ Some useful commands:
 
 3:We must execute this command every time icons or images are added.
 
-> Note you must create the folder by calling the generatedkey.
-
+> Note you must create the folder by calling the `generatedkey`.
 
 ## License
 
