@@ -18,7 +18,16 @@ Some useful commands:
 ```
 
 1: Running this will install the necessary packages for the program to work on your system.
+
 2: We must execute this command every time changes are made in the graphical interface.
+
 3:We must execute this command every time icons or images are added.
 
-Note you must create the folder by calling the generatedkey.
+> Note you must create the folder by calling the generatedkey.
+
+
+## License
+
+MIT
+
+**Free Software, Hell Yeah!**
