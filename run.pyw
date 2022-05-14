@@ -22,11 +22,20 @@ class Ventana_principal(QWidget):
                                                                 "Seleccione Archivo",
                                                                 self.cwd,  # Ruta de inicio
                                                                 "All Files (*);;Text Files (*.txt)")   # Establecer el filtrado de la extensión de archivo, usar intervalo de punto y coma doble
-
+        
         self.nom_archivo = fileName_choose  # asigna el monbre del archivo
-
+        
         if fileName_choose == "":
+            def sms_not_select_archive(self):
+                msgBox = QMessageBox(QMessageBox.NoIcon, 'Archivo','No Seleconado!')
+                msgBox.exec()
+            sms_not_select_archive(self)
             print("\nCancelar selección")
+        elif fileName_choose != "":
+            def sms_select_archive(self):
+                msgBox = QMessageBox(QMessageBox.NoIcon, 'Archivo','¡Seleconado!')
+                msgBox.exec()
+            sms_select_archive(self)
 
         #print("\ nEl archivo que seleccionó es:")
         #print(self.nom_archivo)
@@ -37,7 +46,11 @@ class Ventana_principal(QWidget):
         #print(self.clave)
         with open('clavegenerada/clave.key', 'wb') as archivo_clave:
             archivo_clave.write(self.clave)
+            def sms_generate_key(self):
+                msgBox = QMessageBox(QMessageBox.NoIcon, 'Clave','¡Generada con Exito!')
+                msgBox.exec()
             #print("clave generada exitosamente")
+            sms_generate_key(self)
 
     def charge_clave(self):
         #print("clave cargada exitosamente")
