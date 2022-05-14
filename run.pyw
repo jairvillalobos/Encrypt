@@ -21,7 +21,8 @@ class Ventana_principal(QWidget):
         fileName_choose, filetype = QFileDialog.getOpenFileName(self,
                                                                 "Seleccione Archivo",
                                                                 self.cwd,  # Ruta de inicio
-                                                                "All Files (*);;Text Files (*.txt)")   # Establecer el filtrado de la extensión de archivo, usar intervalo de punto y coma doble
+                                                                "All Files (*);;Text Files (*.txt)")   # Establecer el filtrado de la extensión de archivo
+                                                                                                       #, usar intervalo de punto y coma doble
         
         self.nom_archivo = fileName_choose  # asigna el monbre del archivo
         
