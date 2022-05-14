@@ -19,25 +19,20 @@ class Ventana_principal(QWidget):
 
     def slot_btn_chooseFile(self):
         fileName_choose, filetype = QFileDialog.getOpenFileName(self,
-                                                                "Seleccione Archivo",
-                                                                self.cwd,  # Ruta de inicio
-                                                                "All Files (*);;Text Files (*.txt)")   # Establecer el filtrado de la extensión de archivo
-                                                                                                       #, usar intervalo de punto y coma doble
+                                                            "Seleccione Archivo",
+                                                            self.cwd,  # Ruta de inicio
+                                                            "All Files (*);;Text Files (*.txt)") # Establecer el filtrado de la extensión de archivo
         
         self.nom_archivo = fileName_choose  # asigna el monbre del archivo
         
         if fileName_choose == "":
-            def sms_not_select_archive(self):
-                msgBox = QMessageBox(QMessageBox.NoIcon, 'Archivo','No Seleconado!')
-                msgBox.exec()
-            sms_not_select_archive(self)
-            print("\nCancelar selección")
+            msgBox = QMessageBox(QMessageBox.NoIcon, 'Archivo','No Seleconado!')
+            msgBox.exec()
+            #print("\nCancelar selección")
         elif fileName_choose != "":
-            def sms_select_archive(self):
-                msgBox = QMessageBox(QMessageBox.NoIcon, 'Archivo','¡Seleconado!')
-                msgBox.exec()
-            sms_select_archive(self)
-
+            msgBox = QMessageBox(QMessageBox.NoIcon, 'Archivo','¡Seleconado!')
+            msgBox.exec()
+         
         #print("\ nEl archivo que seleccionó es:")
         #print(self.nom_archivo)
         #print("Tipo de filtro de archivo:", filetype)
