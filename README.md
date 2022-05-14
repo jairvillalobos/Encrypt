@@ -5,13 +5,9 @@ This program was created using libraries
 What:
 
 - cryptography
-        ```
-        pip install cryptography
-        ```
+       
 - PyQt5
-        ```
-        pip install cryptography
-        ```
+
 
 Some useful commands:
 
