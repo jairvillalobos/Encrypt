@@ -26,12 +26,16 @@ Some useful commands:
 
 > Note you must create the folder by calling the `generatedkey`.
 
+
 demo gif
 
 ![encrypt-video](https://user-images.githubusercontent.com/53276949/168412280-dabbd4e7-c17d-4e49-908f-ac3df8330592.gif)
+
 
 ## License
 
 MIT
 
 **Free Software, Hell Yeah!**
+
+
